@@ -98,13 +98,16 @@ body {
 	font-weight: normal;
 }
 
+
 ._ibg img {
 	position: absolute;
 	z-index: -1;
 	height: 100%;
 	top: 0;
+	left: 40%;
 	max-width: 1490px;
-	max-height: 1161px;
+	max-height: 900px;
+	width: 100%;
 	right: 0;
 	object-fit: contain;
 }
@@ -120,6 +123,9 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
 }
 .main {
 	flex: 1 1 100%;
@@ -441,7 +447,7 @@ body {
 		position: relative;
 		align-items: center;
 		&:not(:last-child) {
-			padding-bottom: 80px;
+			padding-bottom: 110px;
 		}
 		&:last-child {
 			padding-bottom: 50px;

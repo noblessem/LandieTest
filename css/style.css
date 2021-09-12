@@ -565,8 +565,10 @@ body {
   z-index: -1;
   height: 100%;
   top: 0;
+  left: 40%;
   max-width: 1490px;
-  max-height: 1161px;
+  max-height: 900px;
+  width: 100%;
   right: 0;
   -o-object-fit: contain;
      object-fit: contain;
@@ -584,6 +586,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .main {
@@ -933,7 +938,7 @@ body {
             align-items: center;
   }
   .example:not(:last-child) {
-    padding-bottom: 80px;
+    padding-bottom: 110px;
   }
   .example:last-child {
     padding-bottom: 50px;
