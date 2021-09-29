@@ -500,7 +500,7 @@ img {
   padding-bottom: 80px;
 }
 
-.purchase__button, .header__btn {
+.header__btn {
   font-family: Roboto;
   background: #111b47;
   border-radius: 2px;
@@ -549,7 +549,7 @@ img {
   transition: 0.2s ease-in;
 }
 
-.purchase__button:hover, .introduce__button:hover, .header__btn:hover {
+.introduce__button:hover, .header__btn:hover {
   background: #fff;
   color: #111b47;
 }
@@ -1087,195 +1087,21 @@ body {
     padding-top: 0px;
   }
 }
-.examples {
-  padding-top: 160px;
-}
-
-.example {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.example:not(:last-child) {
-  padding-bottom: 130px;
-}
-
-.example__img-container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  margin-right: 150px;
-}
-.example__img-container img {
-  width: 100%;
-}
-
-.example__info-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-
-.section-subtitle:not(:last-child) {
-  padding-bottom: 40px !important;
-}
-
-@media screen and (min-width: 992px) {
-  .examples {
-    padding-top: 160px;
-  }
-
-  .example {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .example:not(:last-child) {
-    padding-bottom: 130px;
-  }
-
-  .example__img-container {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-    margin-right: 150px;
-  }
-  .example__img-container img {
-    width: 100%;
-  }
-
-  .example__info-container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-
-  .section-subtitle:not(:last-child) {
-    padding-bottom: 40px !important;
-  }
-}
-@media screen and (max-width: 992px) {
-  .examples {
-    padding-top: 70px;
-  }
-
-  .example {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .example:not(:last-child) {
-    padding-bottom: 110px;
-  }
-  .example:last-child {
-    padding-bottom: 50px;
-  }
-
-  .example__img-container {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-    margin-right: 0;
-  }
-  .example__img-container img {
-    width: 100%;
-  }
-
-  .example__info-container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-
-  .section-subtitle {
-    padding-bottom: 40px !important;
-  }
-
-  .example__info-container .purchase__button {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 20%);
-            transform: translate(-50%, 20%);
-    bottom: -10%;
-    width: 50%;
-    padding: 5px 30px;
-  }
-}
-.page__price {
-  background-color: #e7ecff8c;
-  overflow: hidden;
-  position: relative;
-}
-.page__price::before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 80% 80%;
-  width: 150%;
-  height: 150px;
-  background-color: white;
-  right: -30%;
-  top: -15%;
-  z-index: 2;
-}
-
-.price__content {
-  padding-top: 240px;
-  padding-bottom: 175px;
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.price__value span {
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 66px;
-  /* identical to box height, or 132% */
-  text-align: center;
-  letter-spacing: 1px;
-  /* Colour/Main/Blue/700 */
-  color: #222f65;
-}
-.price__value p {
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-  text-align: center;
-  /* Colour/Main/Blue/600 */
-  color: #37447e;
-  padding-bottom: 60px;
-}
-
-.price__buy p {
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  text-align: center;
-  /* Colour/Main/Grey/600 */
-  color: #5d6970;
-}
-.price__buy p:not(:last-child) {
-  padding-bottom: 10px;
-}
-
 .purchase__button {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   /* identical to box height, or 171% */
+  background-color: #111b47;
   text-align: center;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #111b47;
+}
+.purchase__button:hover {
+  color: #111b47;
+  background: white;
 }
 
 .footer {
