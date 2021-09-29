@@ -12,24 +12,28 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="home">
 			<div class="header__container _container">
 				<div class="header__content">
-					<nav class="header__nav">
+					<nav class="header__nav" id="header__nav">
 						<ul class="header__list">
 							<li class="header__item">
-								<a href="" class="header__link">Home</a>
+								<a onClick="burgerMenu()" href="#home" class="header__link js-scroll">Home</a>
 							</li>
 							<li class="header__item">
-								<a href="" class="header__link">About</a>
+								<a onClick="burgerMenu()" href="#about" class="header__link js-scroll">About</a>
 							</li>
 							<li class="header__item">
-								<a href="" class="header__link">Contact</a>
+								<a onClick="burgerMenu()" href="#contact" class="header__link js-scroll">Contact</a>
 							</li>
 						</ul>
 					</nav>
+					<div id="burger__menu" class="burger__menu" onClick="burgerMenu()">
+						<span></span>
+					</div>
+
 					<div class="logo__container">
-						<a class="header__logo ">
+						<a id="header__logo" class="header__logo">
 							Landie
 						</a>
 					</div>
@@ -108,80 +112,68 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__examples examples">
-				<div class="examples__container _container">
-					<div class="examples__example example">
-						<div class="example__img-container">
-							<img src="./img/example.png" alt="">
+			<section class="page__persons persons" id="about">
+
+				<div class="persons__content">
+					<div class="persons__main main-persons">
+						<h4 class="main-persons__title section-titles">
+							Light, Fast & Powerful
+						</h4>
+						<div class="main-person__subtitle section-subtitle">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+							massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+							mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+							quis enim.
 						</div>
-						<div class="example__info-container">
-							<h4 class="example__title section-titles">Light, Fast & Powerful</h4>
-							<div class="example__subtitle section-subtitle">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-								mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-								quis enim.
+						<div class="main-persons__columns">
+							<div class="main-person__column persons">
+								<img src="./img/svg/Icon.svg" class="person__icon" alt="person">
+								<div class="person__title">
+									Title Goes Here
+								</div>
+								<div class="person__text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</div>
+							<div class="main-person__column persons">
+								<img src="./img/svg/Icon.svg" class="person__icon" alt="person">
+								<div class="person__title">
+									Title Goes Here
+								</div>
+								<div class="person__text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</div>
+							<div class="main-person__column persons">
+								<img src="./img/svg/Icon.svg" class="person__icon" alt="person">
+								<div class="person__title">
+									Title Goes Here
+								</div>
+								<div class="person__text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
+							</div>
+							<div class="main-person__column persons">
+								<img src="./img/svg/Icon.svg" class="person__icon" alt="person">
+								<div class="person__title">
+									Title Goes Here
+								</div>
+								<div class="person__text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="examples__example example">
-						<div class="example__img-container">
-							<img src="./img/example2.png" alt="">
-						</div>
-						<div class="example__info-container">
-							<h4 class="example__title section-titles">Light, Fast & Powerful</h4>
-							<div class="example__subtitle section-subtitle">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-								mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-								quis enim.
-							</div>
-						</div>
-					</div>
-					<div class="examples__example example">
-						<div class="example__img-container">
-							<img src="./img/example3.png" alt="">
-						</div>
-						<div class="example__info-container">
-							<h4 class="example__title section-titles">Light, Fast & Powerful</h4>
-							<div class="example__subtitle section-subtitle">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-								mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-								quis enim.
-							</div>
-							<a href="" class="purchase__button">Purchase Now</a>
-						</div>
+					<div class="persons__image">
+						<img src="./img/persons.jpg" alt="persons Image">
 					</div>
 				</div>
-			</section>
-			<section class="page__price price">
-				<div class="price__container _container">
-					<div class="price__content">
-						<div class="price__text">
-							<h4 class="price__title section-titles">
-								A Price To Suit Everyone
-							</h4>
-							<div class="price__title section-subtitle">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-							</div>
-						</div>
 
-						<div class="price__value">
-							<span>$40</span>
-							<p>UI Design Kit</p>
-						</div>
-						<div class="price__buy">
-							<p>See, One price. Simple.</p>
-							<a href="" class="purchase__button">Purchase Now</a>
-						</div>
-
-					</div>
-				</div>
 			</section>
+
+
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="footer__container _container">
 				<div class="footer__top">
 					<span class="footer__copy">
@@ -191,42 +183,43 @@
 					<a href="#" class="footer__purchase purchase__button">Purchase Now</a>
 				</div>
 				<div class="footer__bottom">
-					
-						<ul class="footer__list">
-							<li class="footer__item">
-								<a href="#" class="footer__link">Home</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">About</a>
 
-							</li>
-							<li class="footer__item"> 
-								<a href="#" class="footer__link">Contact</a>
-							</li>
-</ul>
-						
-						<ul class="footer__icons">
-							<li class="footer__icons-item">
-								<a href="#" class="footer__icons-link"><img src="./img/svg/footer1.svg" alt="Socials"></a>
-							</li>
-							<li class="footer__icons-item">
-								<a href="#" class="footer__icons-link"><img src="./img/svg/footer2.svg" alt="Socials"></a>
-							</li>
-							<li class="footer__icons-item">
-								<a href="#" class="footer__icons-link"><img src="./img/svg/footer3.svg" alt="Socials"></a>
-							</li>
-							<li class="footer__icons-item">
-								<a href="#" class="footer__icons-link"><img src="./img/svg/footer4.svg" alt="Socials"></a>
-							</li>
-							<li class="footer__icons-item">
-								<a href="#" class="footer__icons-link"><img src="./img/svg/footer5.svg" alt="Socials	"></a>
-							</li>
-						</ul>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Home</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">About</a>
+
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Contact</a>
+						</li>
+					</ul>
+
+					<ul class="footer__icons">
+						<li class="footer__icons-item">
+							<a href="#" class="footer__icons-link"><img src="./img/svg/footer1.svg" alt="Socials"></a>
+						</li>
+						<li class="footer__icons-item">
+							<a href="#" class="footer__icons-link"><img src="./img/svg/footer2.svg" alt="Socials"></a>
+						</li>
+						<li class="footer__icons-item">
+							<a href="#" class="footer__icons-link"><img src="./img/svg/footer3.svg" alt="Socials"></a>
+						</li>
+						<li class="footer__icons-item">
+							<a href="#" class="footer__icons-link"><img src="./img/svg/footer4.svg" alt="Socials"></a>
+						</li>
+						<li class="footer__icons-item">
+							<a href="#" class="footer__icons-link"><img src="./img/svg/footer5.svg" alt="Socials	"></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>
 
 	</div>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
